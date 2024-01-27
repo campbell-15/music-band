@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-
+/* navbar styling */
 nav {
     background-color: black;
     color: white;
@@ -35,4 +35,95 @@ nav {
 
 .content {
     padding: 20px;
+}
+/* tours section styling  */
+.upcoming-tours {
+    padding: 20px;
+    width: 100%; /* Ensure the container occupies the full width */
+    text-align: center;
+    background-color: #888;
+}
+
+.section-heading {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.subsection-heading {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;   
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card {
+    width: 300px;
+    margin-right: 20px;
+    border: 3px solid black;
+    border-radius: 8px;
+    display: none;
+    background-color: #333;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-content {
+    padding: 10px;
+    color: #ccc;
+}
+
+.card-content h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card-content p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+label {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 5px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #333;
+}
+
+/* Show selected card based on radio button selection */
+#tour1:checked ~ .cards #card1,
+#tour2:checked ~ .cards #card2,
+#tour3:checked ~ .cards #card3 {
+    display: block;
 }
