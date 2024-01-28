@@ -136,6 +136,10 @@ input[type="radio"]:checked + label {
 /* Show selected card based on radio button selection */
 #tour1:checked ~ .cards #card1,
 #tour2:checked ~ .cards #card2,
-#tour3:checked ~ .cards #card3 {
+#tour3:checked ~ .cards #card3,
+#tour4:checked ~ .cards #card4,
+#tour5:checked ~ .cards #card5,
+#tour6:checked ~ .cards #card6,
+#tour7:checked ~ .cards #card7 {
     display: block;
 }
