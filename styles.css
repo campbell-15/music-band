@@ -143,3 +143,64 @@ input[type="radio"]:checked + label {
 #tour7:checked ~ .cards #card7 {
     display: block;
 }
+
+/* Discography styling */
+
+.discography {
+    padding: 20px;
+}
+
+.discography h2 {
+    text-align: center;
+}
+
+.disco-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.disco-card {
+    margin: 10px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.disco-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.disco-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.disco-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.disco-card:hover .overlay {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
