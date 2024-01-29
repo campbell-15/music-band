@@ -2,6 +2,10 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
 /* navbar styling */
 nav {
     background-color: black;
@@ -11,6 +15,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
