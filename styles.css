@@ -230,3 +230,78 @@ input[type="radio"]:checked + label {
         width: 90%;
     }
 }
+
+/* about us styling section  */
+
+.about-us {
+    padding: 20px;
+    background-color: black;
+}
+
+.aboutHeading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #ccc;
+    padding: 5px;
+    width: 50vh;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.members {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-card {
+    margin: 10px;
+    width: 250px;
+    border: 3px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    box-shadow: 0 8px 16px #ccc;
+}
+
+.about-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+}
+
+.about-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.about-card:hover .overlay {
+    opacity: 1;
+}
