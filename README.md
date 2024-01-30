@@ -1,6 +1,5 @@
 # Judgement Day
 
-Built using HTML and CSS
+Built with HTML & CSS. 
 
-## Deployment
-[View it here]([https://www.example.com](https://campbell-15.github.io/music-band/)https://campbell-15.github.io/music-band/)
+You can view the deployed website [here](https://campbell-15.github.io/music-band/).
